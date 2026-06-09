@@ -1,7 +1,7 @@
 import customtkinter as ctk
 from tkinter import messagebox
 
-# UI එකේ පෙනුම සැකසීම (Dark Mode)
+
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
@@ -67,7 +67,7 @@ class CredentialGuardian(ctk.CTk):
 
         score = self.analyze_url(url)
         
-        # UI එක update කිරීම
+        
         self.score_label.configure(text=f"Risk Score: {score}/100")
         
         if score >= 70:
